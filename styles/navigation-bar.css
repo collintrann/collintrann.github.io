@@ -1,0 +1,18 @@
+.navigation-bar-container {
+  display: flex;
+  height: 75px;
+  background-color: white;
+}
+
+.left-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 36px;
+}
+.logo {
+  font-size: 40px;
+  color: rgb(0, 35, 110);
+  font-weight: bold;  
+  text-decoration: none;
+}

@@ -1,0 +1,46 @@
+main {
+  background-color: lightblue;
+  height: 725px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.home-content {
+  text-align: center;
+}
+
+.home-name {
+  font-size: 56px;
+  margin: 0;
+}
+
+.home-caption-container {
+  margin-left: 70px;
+  margin-right: 70px;  
+  margin-bottom: 25px;;
+}
+
+.home-caption {
+  font-size: 24px;
+  text-align: left;
+  width: 100%;
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkedin-icon, .instagram-icon, .spotify-icon, .github-icon {
+  width: 55px;
+  margin-right: 16px;
+  margin-left: 16px;
+}
