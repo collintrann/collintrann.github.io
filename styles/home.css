@@ -1,6 +1,5 @@
 main {
   background-color: lightblue;
-  height: 725px;
   width: 100%;
   margin-bottom: 25px;
 }
@@ -10,6 +9,8 @@ main {
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding-top: 12%;
+  padding-bottom: 12%;
 }
 
 .home-content {
@@ -39,8 +40,12 @@ main {
   align-items: center;
 }
 
-.linkedin-icon, .instagram-icon, .spotify-icon, .github-icon {
+.linkedin-icon, .instagram-icon, .spotify-icon, .github-icon, .strava-icon {
   width: 55px;
   margin-right: 16px;
   margin-left: 16px;
+}
+
+.strava-icon {
+  border-radius: 5px;
 }
