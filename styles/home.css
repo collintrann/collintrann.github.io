@@ -1,7 +1,6 @@
 main {
-  background-color: lightblue;
+  background-color: #add8e6;
   width: 100%;
-  margin-bottom: 25px;
 }
 
 .home-container {
@@ -9,8 +8,8 @@ main {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding-top: 12%;
-  padding-bottom: 12%;
+  padding-top: 14%;
+  padding-bottom: 14%;
 }
 
 .home-content {
@@ -19,13 +18,12 @@ main {
 
 .home-name {
   font-size: 56px;
-  margin: 0;
+  margin-bottom: 16px;
 }
 
 .home-caption-container {
   margin-left: 70px;
   margin-right: 70px;  
-  margin-bottom: 25px;;
 }
 
 .home-caption {
@@ -34,18 +32,20 @@ main {
   width: 100%;
 }
 
-.social-media-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.resume-button {
+  background-color: #00236e;
+  border: none;
+  border-radius: 64px;
+  padding: 16px 64px;
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.15s;
 }
 
-.linkedin-icon, .instagram-icon, .spotify-icon, .github-icon, .strava-icon {
-  width: 55px;
-  margin-right: 16px;
-  margin-left: 16px;
-}
-
-.strava-icon {
-  border-radius: 5px;
+.resume-button:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }

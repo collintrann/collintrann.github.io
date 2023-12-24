@@ -1,5 +1,11 @@
-body {
+* {
   font-family: "Didot";
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --navbar-color: #ffffff;
+  --background-color: #add8e6;
 }

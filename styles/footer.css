@@ -1,0 +1,29 @@
+.footer {
+  margin-bottom: 16px;
+  margin-top: 8px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.linkedin-icon, .instagram-icon, .spotify-icon, .github-icon, .strava-icon {
+  width: 36px;
+  margin-right: 16px;
+  margin-left: 16px;
+  transition: opacity 0.15s;
+}
+
+.linkedin-icon:hover, .instagram-icon:hover, .spotify-icon:hover, .github-icon:hover, .strava-icon:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.strava-icon {
+  border-radius: 5px;
+}
