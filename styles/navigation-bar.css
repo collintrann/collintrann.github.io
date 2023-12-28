@@ -1,8 +1,12 @@
+@import "general.css";
+
 .navigation-bar-container {
   display: flex;
+  position: fixed;
   justify-content: space-between;
   height: 75px;
-  background-color: white;
+  width: 100%;
+  background-color: var(--navbar-footer-background-color);
 }
 
 .left-section {
@@ -12,8 +16,8 @@
   margin-left: 36px;
 }
 .logo {
-  font-size: 40px;
-  color: rgb(0, 35, 110);
+  font-size: 2.5em;
+  color: var(--navbar-text-color);
   font-weight: bold;  
   text-decoration: none;
 }
@@ -26,10 +30,33 @@
 }
 
 .nav-link {
-  display: fixed;
   margin-right: 16px;
   margin-left: 16px;
-  color: rgb(0, 35, 110);
+  color: var(--navbar-text-color);
   text-decoration: none;
   font-size: 18px;
+  transition: opacity 0.15s, text-decoration 0.15s;
+}
+.nav-link:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  text-decoration: underline;
+} 
+
+#theme-toggle {
+  width: 0;
+  height: 0;
+  border: none;
+  margin-right: 44px;
+}
+.theme-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 0px;
+  transition: opacity 0.15s;
+}
+#theme-toggle:hover {
+  cursor: pointer;
+  opacity: 0.6;
 }

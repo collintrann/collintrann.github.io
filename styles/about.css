@@ -1,0 +1,17 @@
+@import "general.css";
+
+main {
+  background-color: var(--main-background-color);
+  width: 100%;
+  padding-top: 75px;
+}
+
+.main-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 14%;
+  padding-bottom: 14%;
+}
+

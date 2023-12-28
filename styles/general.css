@@ -6,6 +6,17 @@
 }
 
 :root {
-  --navbar-color: #ffffff;
-  --background-color: #add8e6;
+  --navbar-footer-background-color: #ffffff;
+  --navbar-text-color: #00236e;
+  --main-background-color: #add8e6;
+  --main-text-color: #000000;
+  --button-color: #00236e;
+}
+
+[data-theme="dark-mode"] {
+  --navbar-footer-background-color: #add8e6;
+  --navbar-text-color: #00236e;
+  --main-background-color: #00236e;
+  --main-text-color: #ffffff;
+  --button-color: #add8e6;
 }

@@ -1,9 +1,12 @@
+@import "general.css";
+
 main {
-  background-color: #add8e6;
+  background-color: var(--main-background-color);
   width: 100%;
+  padding-top: 75px;
 }
 
-.home-container {
+.main-content-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,6 +17,7 @@ main {
 
 .home-content {
   text-align: center;
+  color: var(--main-text-color);
 }
 
 .home-name {
@@ -33,14 +37,14 @@ main {
 }
 
 .resume-button {
-  background-color: #00236e;
+  background-color: var(--button-color);
+  color: var(--main-background-color);
   border: none;
   border-radius: 64px;
   padding: 16px 64px;
   margin-top: 24px;
   font-size: 16px;
   font-weight: bold;
-  color: #ffffff;
   text-decoration: none;
   transition: opacity 0.15s;
 }

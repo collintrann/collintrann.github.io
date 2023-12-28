@@ -1,8 +1,12 @@
+@import "general.css";
+
 .footer {
   margin-bottom: 16px;
   margin-top: 8px;
   text-align: center;
   font-size: 14px;
+  background-color: var(--navbar-footer-background-color);
+  color: var(--main-text-color);
 }
 
 .social-media-container {
