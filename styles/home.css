@@ -48,8 +48,11 @@ main {
   text-decoration: none;
   transition: opacity 0.15s;
 }
-
 .resume-button:hover {
   opacity: 0.6;
   cursor: pointer;
+}
+.resume-link {
+  color: var(--main-background-color);
+  text-decoration: none;
 }

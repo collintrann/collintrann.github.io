@@ -1,19 +1,19 @@
 @import "general.css";
 
 .footer {
-  margin-bottom: 16px;
-  margin-top: 8px;
+  padding-bottom: 16px;
+  padding-top: 8px;
   text-align: center;
   font-size: 14px;
-  background-color: var(--navbar-footer-background-color);
-  color: var(--main-text-color);
+  background-color: white;
+  color: black;
 }
 
 .social-media-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 24px;
+  padding-top: 24px;;
 }
 
 .linkedin-icon, .instagram-icon, .spotify-icon, .github-icon, .strava-icon {
