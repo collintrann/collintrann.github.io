@@ -4,17 +4,38 @@ const root = document.documentElement;
 const lightModeImagePath = 'images/sun.png';
 const darkModeImagePath = 'images/moon.png';
 
+
+const setDark = () => {
+  root.setAttribute('data-theme', 'dark-mode');
+  const themeIcon = document.querySelector('.theme-icon');
+  themeIcon.src = darkModeImagePath;
+  themeIcon.alt = 'Dark Mode';
+};
+
+const setLight = () => {
+  root.removeAttribute('data-theme');
+  const themeIcon = document.querySelector('.theme-icon');
+  themeIcon.src = lightModeImagePath;
+  themeIcon.alt = 'Light Mode';
+};
+
 const toggleTheme = () => {
-  var themeIcon = document.querySelector('.theme-icon');
   if (root.getAttribute('data-theme') === "dark-mode") {
-    root.removeAttribute('data-theme');
-    themeIcon.src = lightModeImagePath;
-    themeIcon.alt = 'Light Mode';
+    setLight();
+    localStorage.setItem('savedTheme', 'light');
   } else {
-    root.setAttribute('data-theme', 'dark-mode');
-    themeIcon.src = darkModeImagePath;
-    themeIcon.alt = 'Dark Mode';
+    setDark();
+    localStorage.setItem('savedTheme', 'dark');
+  }
+};
+
+const setSavedTheme = (savedTheme) => {
+  if (savedTheme === "dark") {
+    setDark();
+  } else {
+    setLight();
   }
 };
 
 themeToggle.addEventListener('click', toggleTheme);
+setSavedTheme(localStorage.getItem('savedTheme')); //sets previously saved theme
