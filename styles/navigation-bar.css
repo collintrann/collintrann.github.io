@@ -116,7 +116,6 @@ li {
   .nav-menu.active {
     background-color: var(--navbar-footer-background-color);
     top: 100%;
-    transition: all 0.5s;
     height: 45vh;
     padding: 48px 0;
     transition: all 0.7s ease-in-out;
