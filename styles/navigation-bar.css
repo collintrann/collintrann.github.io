@@ -17,13 +17,13 @@
   text-decoration: none;
   transition: font-size 0s;
   line-height: 1.75rem;
-  margin-left: 36px;
+  margin-left: 32px;
 }
-/* @media (max-width: 625px) {
+@media (max-width: 768px) {
   .logo {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
-} */
+}
 
 li {
   list-style-type: none;
