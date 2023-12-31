@@ -3,23 +3,22 @@ const root = document.documentElement;
 
 const lightModeImagePath = 'images/sun.png';
 const darkModeImagePath = 'images/moon.png';
+const themeIcon = document.querySelector('.theme-icon'); //theme img element
 
 
 const setDark = () => {
   root.setAttribute('data-theme', 'dark-mode');
-  const themeIcon = document.querySelector('.theme-icon');
   themeIcon.src = darkModeImagePath;
   themeIcon.alt = 'Dark Mode';
 };
 
 const setLight = () => {
   root.removeAttribute('data-theme');
-  const themeIcon = document.querySelector('.theme-icon');
   themeIcon.src = lightModeImagePath;
   themeIcon.alt = 'Light Mode';
 };
 
-const toggleTheme = () => {
+const toggleTheme = () => { // changes theme on click
   if (root.getAttribute('data-theme') === "dark-mode") {
     setLight();
     localStorage.setItem('savedTheme', 'light');
@@ -29,7 +28,7 @@ const toggleTheme = () => {
   }
 };
 
-const setSavedTheme = (savedTheme) => {
+const setSavedTheme = (savedTheme) => { // sets previously saved theme
   if (savedTheme === "dark") {
     setDark();
   } else {
@@ -38,4 +37,13 @@ const setSavedTheme = (savedTheme) => {
 };
 
 themeToggle.addEventListener('click', toggleTheme);
-setSavedTheme(localStorage.getItem('savedTheme')); //sets previously saved theme
+setSavedTheme(localStorage.getItem('savedTheme'));
+
+
+const hamburger = document.querySelector('.hamburger-menu');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+});

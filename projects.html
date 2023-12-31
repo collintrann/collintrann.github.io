@@ -14,19 +14,33 @@
   <body>
     <nav>
       <div class="navigation-bar-container">
-        <div class="left-section">
-          <a href="index.html" class="logo">Collin Tran</a>
+        <a href="index.html" class="logo">Collin Tran</a>
+
+        <div class="theme-toggle-container">
+          <button id="theme-toggle">
+            <img src="images/sun.png" alt="Light Mode" class="theme-icon">
+          </button>
         </div>
-        <div class="right-section">
-          <div class="theme-toggle-container">
-            <button id="theme-toggle">
-              <img src="images/sun.png" alt="Light Mode" class="theme-icon">
-            </button>
-          </div>
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="about.html" class="nav-link">About</a>
-          <a href="projects.html" class="nav-link">Projects</a>
+
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link">Projects</a>
+          </li>
+        </ul>
+
+        <div class="hamburger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
+
       </div>
     </nav>
 
@@ -56,7 +70,7 @@
           <img src="images/strava.png" alt="Strava" class="strava-icon">
         </a>
       </div>
-      <div class="footer">Created using HTML5/CSS.</div>
+      <div class="footer">By Collin Tran with HTML5/CSS and JavaScript.</div>
     </footer>
 
     <script src="main.js"></script>
