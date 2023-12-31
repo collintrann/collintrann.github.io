@@ -19,11 +19,11 @@
   line-height: 1.75rem;
   margin-left: 36px;
 }
-@media (max-width: 625px) {
+/* @media (max-width: 625px) {
   .logo {
     font-size: 1.75rem;
   }
-}
+} */
 
 li {
   list-style-type: none;
